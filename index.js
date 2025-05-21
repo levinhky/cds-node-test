@@ -7,7 +7,7 @@ const PORT = 4000;
 
 app.use(
   cors({
-    origin: "https://fabulous-marigold-7f700b.netlify.app",
+    origin: "*",
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
   })
