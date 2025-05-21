@@ -5,11 +5,13 @@ const MiniAppEncryption = require("./miniapp");
 const app = express();
 const PORT = 4000;
 
-app.use(cors({
-    origin: "http://localhost:3000",
+app.use(
+  cors({
+    origin: "https://fabulous-marigold-7f700b.netlify.app",
     methods: ["GET", "POST"],
-    allowedHeaders: ["Content-Type"]
-  }));
+    allowedHeaders: ["Content-Type"],
+  })
+);
 
 app.use(express.json());
 
